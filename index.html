@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>51 Kart Oyunu</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>3 Deste ile 51 Kart Oyunu</h1>
+    {% for player, cards in hands.items() %}
+        <h2>{{ player }}</h2>
+        <div class="hand">
+            {% for card in cards %}
+                <span class="card">{{ card }}</span>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</body>
+</html>

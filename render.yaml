@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: 40oyun
+    env: python
+    region: frankfurt
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    autoDeploy: true
